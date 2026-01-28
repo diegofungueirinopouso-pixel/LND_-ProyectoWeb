@@ -1,4 +1,4 @@
-/* BÁSICO */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +20,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;           /* CLAVE */
   align-items: center;
-  padding: 0 40px;
+  padding: 15px 40px;
   z-index: 10;
 }
 
@@ -34,27 +33,35 @@ header {
   color: white;
   font-size: 24px;
   font-weight: bold;
+  flex: 1 1 200px;
 }
 
-/* NAVEGACIÓN */
+/* NAV */
+nav {
+  flex: 2 1 400px;
+}
+
+/* LISTA */
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   gap: 25px;
+  flex-wrap: wrap;           /* CLAVE */
 }
 
+/* LINKS */
 nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
-  transition: color 0.3s;
 }
 
 nav ul li a:hover {
   color: #00c3ff;
 }
 
-/* VIDEO DE FONDO */
+
 .video-container {
   position: fixed;
   top: 0;
@@ -71,7 +78,7 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
-/* FOOTER */
+
 .footer {
   background: rgba(0, 0, 0, 0.85);
   color: white;
@@ -123,11 +130,14 @@ nav ul li a:hover {
   color: #aaa;
 }
 
-/* RESPONSIVE GENERAL */
 @media (max-width: 768px) {
   header {
     padding: 0 20px;
   }
+
+  nav ul {
+  justify-content: center;
+}
 
   nav ul {
     gap: 15px;
@@ -140,5 +150,39 @@ nav ul li a:hover {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ddd;
+}
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
