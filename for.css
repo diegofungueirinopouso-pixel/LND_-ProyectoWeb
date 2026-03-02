@@ -1,15 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    padding: 40px;
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    margin: 0;                 
 }
 
 .formulario {
     width: 500px;
     background-color: #fff;
     padding: 20px;
-    border: 2px solid #000;
-    background-image:   
+    border: 2px solid #000;   
     background-size: 20px 20px;
 }
 
