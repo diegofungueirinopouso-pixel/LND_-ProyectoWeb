@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   padding-top: 70px;
 }
-/* HEADER */
+
 header {
   position: fixed;
   top: 0;
@@ -21,18 +21,18 @@ header {
   padding: 15px 40px;
   z-index: 10;
 }
-/* LOGO */
+
 .logo {
   color: white;
   font-size: 24px;
   font-weight: bold;
   flex: 1 1 200px;
 }
-/* NAV */
+
 nav {
   flex: 2 1 400px;
 }
-/* LISTA */
+
 nav ul {
   list-style: none;
   display: flex;
@@ -40,7 +40,7 @@ nav ul {
   gap: 25px;
   flex-wrap: wrap;          
 }
-/* LINKS */
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -174,7 +174,7 @@ nav ul li a:hover {
   font-size: 36px;
   margin-bottom: 50px;
 }
-/* COLUMNAS */
+
 .columns {
   display: flex;
   gap: 40px;
@@ -242,7 +242,7 @@ nav ul li a:hover {
   text-align: center;
 }
 .pricing-table th {
-  background: #00c3ff;
+  background: #000000;
   color: white;
 }
 .pricing-table tr:nth-child(even) {
